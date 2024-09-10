@@ -5,6 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Attach to Chrome",
+            "port": 9222,
+            "request": "attach",
+            "type": "chrome",
+            "webRoot": "${file:///C:/Sty/MERN%20Training%20Course/MERN-Website/Website.html}"
+        },
+        {
             "type": "chrome",
             "request": "launch",
             "name": "Open Website.html",
