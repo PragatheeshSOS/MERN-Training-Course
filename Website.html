@@ -1,95 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *{
+        * {
             margin: 0px;
             padding: 0px;
         }
-        body{
+
+        body {
             height: 100vh;
             width: 100vw;
-            background-color: #700707;
-            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: #f5f5f5;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             display: flex;
             flex-direction: column;
             justify-content: start;
             align-items: center;
         }
-        .Section1{
+
+        .section1 {
             width: 70%;
-            height: 13rem;
-            background-color: black;
+            height: 12rem;
+            background: #8E2DE2;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #4A00E0, #8E2DE2);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
             display: flex;
-            color: rgb(255, 0, 0);
             flex-direction: row;
             justify-content: center;
             align-items: center;
-            font-family: Verdana;
+            color: white;
+            border-radius: 5px;
+            box-shadow:
+                0.6px 1.3px 1.4px rgba(0, 0, 0, 0.014),
+                1.5px 3.2px 3.5px rgba(0, 0, 0, 0.02),
+                2.9px 6px 6.5px rgba(0, 0, 0, 0.025),
+                5.1px 10.7px 11.6px rgba(0, 0, 0, 0.03),
+                9.6px 20.1px 21.7px rgba(0, 0, 0, 0.036),
+                23px 48px 52px rgba(0, 0, 0, 0.05);
         }
-        .Profile-Img{
-            width: 45%;
-            height: 95%;
+
+        .profile-img-section {
+            width: 40%;
+            height: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
-            border-radius: 50%;
         }
-        .profile-data{
+
+        .profile-data {
             width: 40%;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: flex-start;
         }
+
+        .profile-img {
+            height: 8rem;
+            width: 8rem;
+            border-radius: 50%;
+        }
+
         .section2 {
             width: 70%;
-            height: 12rem;
-            border: 1px solid rgb(0, 0, 0);
+            height: 6rem;
+            /* background-color: aquamarine; */
+            /* border: 1px solid aquamarine; */
+
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: start;
+            /* padding: 10px; */
         }
-
 
         .section3 {
             width: 70%;
-            height: 20rem;
-            border: 1px solid aquamarine;
+            height: 16rem;
+            /* background-color: aquamarine; */
+            /* border: 1px solid aquamarine; */
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: start;
+            /* padding: 10px; */
         }
-
 
         .section4 {
             width: 70%;
-            height: 15rem;
-            border: 1px solid aquamarine;
+            height: 12rem;
+            /* background-color: aquamarine; */
+            /* border: 1px solid aquamarine; */
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: start;
+            /* padding: 10px; */
         }
 
-
         .section-title {
-            color: aquamarine;
+            /* height: 10%; */
             font-weight: bold;
         }
 
-
         .ed-table {
             width: 100%;
-            border: 1px solid gray;
+            border: 2px solid gray;
             border-collapse: collapse;
         }
 
+        th {
+            background-color: #8E2DE2;
+            color: #fff;
+        }
 
         th,
         td {
@@ -97,34 +128,151 @@
             border: 1px solid gray;
         }
 
-
         .companies {
             font-weight: bold;
 
+        }
 
-            color: aquamarine;
+        .color-primary {
+            color: #8E2DE2;
+        }
+
+        .section5 {
+            width: 70%;
+            height: 10rem;
+            /* background-color: aquamarine; */
+            /* border: 1px solid aquamarine; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            /* padding: 10px; */
+        }
+
+        .section6 {
+            width: 70%;
+            height: 2rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+            font-weight: bold;
+
+            background: #8E2DE2;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #4A00E0, #8E2DE2);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        }
+
+        li {
+            list-style: square;
+            margin-left: 2rem;
+        }
+
+        .text-white {
+            color: white;
         }
     </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    <div class="Section1">
-        <div class="Profile-Img">
-            <img src="C:\Users\samit\Downloads\PS Profile.jpg"
-            alt="Batman" class="Profile-Img">
+    <div class="section1">
+        <div class="profile-img-section">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrlKOj_z8pKPFjKzkJU8OZi9yiLtyQD30dIA&s"
+                alt="doggo" class="profile-img">
         </div>
         <div class="profile-data">
-                <h1 font-family: Verdana>Pragatheesh S</h1>
-                <h3>pragatheehs66@gmail.com</h3>
+            <h1>
+                Mohanraj M
+            </h1>
+            <h3>
+                max.neo.dev@gmail.com
+            </h3>
         </div>
     </div>
-    <div class="Section2">
-        <h1>Objective</h1>
+    <div class="section2">
+        <h1 class="section-title color-primary">
+            Objective
+        </h1>
         <p>
-            Passionate Artificial Intelligence and Machine Learning Engineer.
+            I am a highly motivated and results-driven sales professional seeking a challenging opportunity to leverage
+            my skills and experience in a dynamic sales environment.
         </p>
     </div>
-    <div class="Section3"></div>
-    <div class="Section4"></div>
-    <div class="Section5"></div>
+    <div class="section3">
+        <h1 class="section-title color-primary">
+            Education
+        </h1>
+        <table class="ed-table">
+            <tr>
+                <th>Degree</th>
+                <th>Campus</th>
+                <th>Score %</th>
+            </tr>
+            <tr>
+                <td>Deg1</td>
+                <td>School 1</td>
+                <td>85%</td>
+            </tr>
+            <tr>
+                <td>Deg2</td>
+                <td>School 2</td>
+                <td>85%</td>
+            </tr>
+            <tr>
+                <td>Deg3</td>
+                <td>School 3</td>
+                <td>85%</td>
+            </tr>
+        </table>
+    </div>
+    <div class="section4">
+        <h1 class="section-title color-primary">
+            Internships
+        </h1><br>
+        <p>
+            <span class="companies color-primary"> ACCOUNT MANAGER / VANARSDEL, LTD.</span> <br>
+            JUNE 20XX – PRESENT
+            Managed and grew key accounts by developing strong relationships, identifying opportunities, and
+            implementing effective sales strategies.
+        </p>
+        <br>
+        <p>
+            <span class="companies color-primary">MANAGER / VANARSDEL, LTD.</span><br>
+            JUNE 20XX – PRESENT
+            Managed and grew key accounts by developing strong relationships, identifying opportunities, and
+            implementing effective sales strategies.
+
+        </p>
+    </div>
+    <div class="section5">
+        <h1 class="section-title color-primary">
+            Skills
+        </h1><br>
+        <ul>
+            <li>MERN</li>
+            <li>Springboot</li>
+            <li>AWS</li>
+            <li>DevOPS</li>
+        </ul>
+    </div>
+    <div class="section6">
+        <a href="tel:+91 9789681510">
+            <i class="fa-solid fa-phone text-white"></i>
+        </a>
+        <a href="mailto:max.neo.dev@gmail.com">
+            <i class="fa-solid fa-envelope text-white"></i>
+        </a>
+        <a href="https://www.linkedin.com/" target="_blank">
+            <i class="fa-brands fa-linkedin-in text-white"></i>
+        </a>
+    </div>
 </body>
+
 </html>
