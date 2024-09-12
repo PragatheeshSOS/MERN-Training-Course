@@ -20,7 +20,6 @@
 
             .blue{
                 background-color: blue;
-                animation: 15s myanimation ease-in;
             }
             
             .red{
@@ -58,11 +57,17 @@
                     opacity: 100%;
                 }
             }
+
+            .blue:hover{
+                background-color: green;
+                transition: 0.1s background-color ease-in;
+            }
+
         </style>
     </head>
     <body>
         <div class="container">
-        <div class="blue">Blue</div>
+        <div class="blue">Blue. Touch Me To Turn Green</div>
         <div class="red">Red</div>
         <div class="yellow">Yellow</div>
         </div>
