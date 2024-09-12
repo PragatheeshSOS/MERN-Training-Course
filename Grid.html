@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Grid</title>
+        <style>
+            * {
+                margin: 0px;
+                padding: 0px;
+            }
+        
+            .container {
+                display: grid;
+                grid-template-columns: 300px 300px 300px;
+                grid-template-rows: repeat(3, 300px);
+                grid-gap: 1%;
+            }
+
+            .blue{
+                background-color: blue;
+            }
+
+            .red{
+                background-color: red;
+            }
+
+            .yellow{
+                background-color: yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container"></div>
+        <div class="blue">Blue Da</div>
+        <div class="red">Red Dra</div>
+        <div class="yellow">CSK</div>
+    </body>
+</html>
