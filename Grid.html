@@ -18,6 +18,9 @@
                 grid-gap: 1%;
             }
 
+            @media only screen and (min-width:100px)
+            {
+
             .blue{
                 background-color: blue;
             }
@@ -36,6 +39,30 @@
                 grid-row: 3/-1;
                 animation: 15s myanimation ease-in;
             }
+        }
+
+            @media only screen and (max-width:100px)
+            {
+
+            .blue{
+                background-color: blue;
+            }
+            
+            .red{
+                background-color: red;
+                grid-row: 2/3;
+                grid-column: 2/3;
+                /* animation: 15s myanimation ease-in; */
+                animation: 15s myopacity ease-in;
+            }
+            
+            .yellow{
+                background-color: yellow;
+                grid-column: 3/-1;
+                grid-row: 3/-1;
+                animation: 15s myanimation ease-in;
+            }
+        }
 
             @keyframes myanimation {
                 0%{
