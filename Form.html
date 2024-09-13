@@ -49,21 +49,45 @@
                 border-bottom: 4.5px solid rgb(89, 255, 0);
                 outline: none;
             }
-            
+
         </style>
     </head>
 
     <body>
         <div class="frame">
-            <form class="form">
+            <form class="form" onsubmit="userdata(event)">
                 <input type="text" name="name" id="name" placeholder="Enter Your Name">
                 <input type="email" name="" id="email" placeholder="Enter Your Email">
                 <input type="tel" name="" id="number" placeholder="Enter Your Phone Number">
                 <!-- <input type="date" name="" id="date" placeholder="Enter Your Birth"> -->
-                <input type="number" name="" id="number" placeholder="Enter Your Age">
+                <input type="number" name="" id="age" placeholder="Enter Your Age">
                 <input type="password" name="" id="password" placeholder="Enter Your Password">
                 <button type="submit">Register</button>
             </form>
         </div>
     </body>
+
+    <script>
+        function userdata(data) {
+            data.preventDefault();
+            let name = document.getElementById("name").value
+            let email = document.getElementById("email").value
+            let number = document.getElementById("number").value
+            let age = document.getElementById("age").value
+            let password = document.getElementById("password").value
+            
+            console.log(name)
+
+            const userdetail = {
+                username: name,
+                useremail: email,
+                usernumber: number,
+                userage: age,
+                userpassword: password
+            }
+            const {username, useremail, usernumber, userage, userpassword} = userdetail
+            console.log(useremail)
+
+        }
+    </script>
 </html>
