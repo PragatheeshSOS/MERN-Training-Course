@@ -49,3 +49,17 @@ function trigger(data) {
 trigger(1)
 trigger(-1)
 trigger("dfs")
+
+async function API() {
+    try {
+    const response = await fetch("https://66e5274d5cc7f9b6273c6f5e.mockapi.io/MERN/Register")
+    const data = await response.json()
+    console.log(data)
+    console.table(data)
+    return data;
+    } catch(error) {
+        console.log(error)
+    }
+}
+API()
+// const Apidata = API()
