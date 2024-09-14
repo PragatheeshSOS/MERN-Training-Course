@@ -56,12 +56,12 @@
     <body>
         <div class="frame">
             <form class="form" onsubmit="userdata(event)">
-                <input type="text" name="name" id="name" placeholder="Enter Your Name">
-                <input type="email" name="" id="email" placeholder="Enter Your Email">
+                <input type="text" name="name" id="name" placeholder="Enter Your Name" required>
+                <input type="email" name="" id="email" placeholder="Enter Your Email" required>
                 <input type="tel" name="" id="number" placeholder="Enter Your Phone Number">
                 <!-- <input type="date" name="" id="date" placeholder="Enter Your Birth"> -->
-                <input type="number" name="" id="age" placeholder="Enter Your Age">
-                <input type="password" name="" id="password" placeholder="Enter Your Password">
+                <input type="number" name="" id="age" placeholder="Enter Your Age" required>
+                <input type="password" name="" id="password" placeholder="Enter Your Password" required>
                 <button type="submit">Register</button>
             </form>
         </div>
@@ -87,7 +87,11 @@
             }
             const {username, useremail, usernumber, userage, userpassword} = userdetail
             console.log(useremail)
+        // }
 
+        let d1 = [1,2]
+        let dd = [...userdetail2, d1]
+        console.log(dd)
         }
     </script>
 </html>
